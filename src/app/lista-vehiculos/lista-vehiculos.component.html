@@ -1,0 +1,29 @@
+
+<h1>Concesionario Cuyo</h1>
+
+
+<div class="vehiculos-container">
+    <app-filtro (filtrarVehiculos)="filtrarVehiculos($event)"></app-filtro>
+    <ul class="vehiculos-list">
+      <li *ngFor="let vehiculo of vehiculos" class="vehiculo-item">
+        
+        <span class="vehiculo-marca">{{ vehiculo.marca }}</span>
+        <span class="vehiculo-modelo">{{ vehiculo.modelo }}</span>
+        <span class="vehiculo-info">({{ vehiculo.tipo }} - {{ vehiculo.estado }})</span>
+        
+        <button (click)="eliminarVehiculo(vehiculo)">Eliminar</button>
+
+      
+    
+      </li>
+      
+    </ul>
+     
+    <input type="text" [(ngModel)]="nuevoAuto.marca" placeholder="Marca">
+    <input type="text" [(ngModel)]="nuevoAuto.modelo" placeholder="Modelo">
+    <input type="text" [(ngModel)]="nuevoAuto.tipo" placeholder="tipo">
+    <input type="text" [(ngModel)]="nuevoAuto.estado" placeholder="estado">
+    
+    
+    <button (click)="agregarAuto()">Agregar Auto</button>
+    

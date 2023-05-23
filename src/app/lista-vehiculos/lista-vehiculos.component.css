@@ -1,0 +1,50 @@
+.vehiculos-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #1a1a2e; /* Azul oscuro */
+  padding: 20px;
+  color: #ffffff; /* Texto blanco */
+}
+
+.vehiculos-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.vehiculo-item {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  margin-bottom: 10px;
+  background-color: #16213e; /* Azul más claro */
+  border-radius: 5px;
+}
+
+.vehiculo-marca {
+  font-size: 18px;
+  font-weight: bold;
+  color: #ffb703; /* Amarillo */
+  margin-right: 10px;
+}
+
+.vehiculo-modelo {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.vehiculo-info {
+  font-size: 14px;
+  color: #94a1b2; /* Gris claro */
+}
+
+h1 {
+  font-size: 24px;
+  font-weight: bold;
+  color: #ffb703; /* Amarillo */
+  background-color: #1a1a2e; /* Azul oscuro */
+  padding: 10px;
+  margin-bottom: 20px;
+}
